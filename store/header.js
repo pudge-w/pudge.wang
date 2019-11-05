@@ -1,6 +1,7 @@
 export const state = () => ({
   // list: []
-  searchOutShow: false
+  searchOutShow: false,
+  navOutShow: false
 })
 
 export const mutations = {
@@ -18,5 +19,8 @@ export const mutations = {
   // }
   change (state, value) {
     state.searchOutShow = value
+  },
+  showNavOut (state, value) {
+    state.navOutShow = value
   }
 }

@@ -1,0 +1,31 @@
+@import "../common/var.less";
+
+.nav-out {
+  background: @bg-color;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: 33.33%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid @hover-color;
+    border-width: 0 1px 1px 0;
+    cursor: pointer;
+    &:hover {
+      background: @hover-color;
+    }
+    .iconfont {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+  }
+  li:nth-child(3) {
+    border-right: none;
+  }
+  li:last-child {
+    border-right: none;
+  }
+}

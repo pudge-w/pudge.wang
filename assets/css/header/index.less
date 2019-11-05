@@ -3,7 +3,37 @@
 .el-row {
   height: 100%;
   background: @bg-color;
+  position: relative;
   .el-col {
     height: 100%;
+  }
+}
+.el-col:nth-last-child(2) {
+  height: 80px;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.el-col:nth-last-child(1) {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .el-col:nth-last-child(2) {
+    top: 100px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .el-col:nth-last-child(2) {
+    top: 60px;
+  }
+  .el-col:nth-last-child(1) {
+    display: block;
   }
 }
