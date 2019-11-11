@@ -1,5 +1,5 @@
 <template>
-  <nav v-if="show" class="nav-out">
+  <nav v-if="show" class="nav-out" >
     <li v-for="(item, index) in navList" :key="index">
       <span class="iconfont" :class="item.iconName"></span>
       <p>{{ item.title }}</p>
